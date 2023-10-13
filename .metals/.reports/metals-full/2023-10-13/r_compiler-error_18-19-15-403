@@ -1,0 +1,55 @@
+java.util.NoSuchElementException: next on empty iterator
+occurred in the presentation compiler.
+
+action parameters:
+offset: 679
+uri: file://<HOME>/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/service/AttribuerCandidatService.java
+text:
+package com.iwa.recrutements.service;
+
+import com.iwa.recrutements.model.AttribuerCandidat;
+import com.iwa.recrutements.repository.AttribuerCandidatRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class AttribuerCandidatService {
+
+    @Autowired
+    private AttribuerCandidatRepository attribuerCandidatRepository;
+
+    public List<AttribuerCandidat> getAllAttributions() {
+        return attribuerCandidatRepository.findAll();
+    }
+
+    public Optional<AttribuerCandidat> getAttributionById(Long id) {
+        return attribuerCandidatRe@@pository.findById(id);
+    }
+
+    public AttribuerCandidat saveOrUpdateAttribution(AttribuerCandidat attribuerCandidat) {
+        return attribuerCandidatRepository.save(attribuerCandidat);
+    }
+
+    public void deleteAttribution(Long id) {
+        attribuerCandidatRepository.deleteById(id);
+    }
+
+    // Autres méthodes selon vos besoins
+}
+
+
+
+error stacktrace:
+scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
+	scala.collection.Iterator$$anon$19.next(Iterator.scala:971)
+	scala.collection.mutable.MutationTracker$CheckedIterator.next(MutationTracker.scala:76)
+	scala.collection.IterableOps.head(Iterable.scala:222)
+	scala.collection.IterableOps.head$(Iterable.scala:222)
+	scala.collection.AbstractIterable.head(Iterable.scala:933)
+	dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:168)
+	scala.meta.internal.pc.MetalsDriver.run(MetalsDriver.scala:45)
+	scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:34)
+	scala.meta.internal.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:325)

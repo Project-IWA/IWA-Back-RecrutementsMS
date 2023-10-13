@@ -1484,3 +1484,367 @@ oct. 13, 2023 6:08:49 PM scala.meta.internal.pc.CompilerAccess handleError
 GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-08-49-492
 oct. 13, 2023 6:08:50 PM scala.meta.internal.pc.CompilerAccess handleError
 GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-08-50-388
+oct. 13, 2023 6:16:04 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-16-04-223
+2023.10.13 18:18:46 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/repository/AttribuerCandidatRepository.java
+2023.10.13 18:18:46 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/repository/AttribuerCandidatRepository.java. Output:
+
+oct. 13, 2023 6:18:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-46-718
+oct. 13, 2023 6:18:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-46-764
+oct. 13, 2023 6:18:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-47-064
+oct. 13, 2023 6:18:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-47-291
+oct. 13, 2023 6:18:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-47-374
+2023.10.13 18:18:47 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/repository/AttribuerCandidatRepository.java
+2023.10.13 18:18:47 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/repository/AttribuerCandidatRepository.java. Output:
+
+oct. 13, 2023 6:18:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-47-822
+oct. 13, 2023 6:18:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-47-849
+oct. 13, 2023 6:18:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-47-987
+oct. 13, 2023 6:18:48 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-48-073
+oct. 13, 2023 6:18:48 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-48-973
+2023.10.13 18:18:49 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/repository/AttribuerCandidatRepository.java
+2023.10.13 18:18:49 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/repository/AttribuerCandidatRepository.java. Output:
+
+oct. 13, 2023 6:18:49 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-49-816
+oct. 13, 2023 6:18:49 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-49-964
+oct. 13, 2023 6:18:50 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-50-075
+oct. 13, 2023 6:18:50 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-18-50-168
+2023.10.13 18:19:08 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/service/AttribuerCandidatService.java
+2023.10.13 18:19:08 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/service/AttribuerCandidatService.java. Output:
+
+oct. 13, 2023 6:19:08 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-08-548
+oct. 13, 2023 6:19:08 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-08-588
+oct. 13, 2023 6:19:08 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-08-815
+oct. 13, 2023 6:19:08 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-08-966
+oct. 13, 2023 6:19:09 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-09-079
+oct. 13, 2023 6:19:09 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-09-346
+2023.10.13 18:19:09 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/service/AttribuerCandidatService.java
+2023.10.13 18:19:09 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/service/AttribuerCandidatService.java. Output:
+
+oct. 13, 2023 6:19:10 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-10-050
+oct. 13, 2023 6:19:10 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-10-094
+oct. 13, 2023 6:19:10 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-10-169
+oct. 13, 2023 6:19:10 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-10-253
+oct. 13, 2023 6:19:10 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-10-451
+oct. 13, 2023 6:19:10 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-10-548
+2023.10.13 18:19:11 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/service/AttribuerCandidatService.java
+2023.10.13 18:19:11 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/service/AttribuerCandidatService.java. Output:
+
+oct. 13, 2023 6:19:11 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-11-289
+oct. 13, 2023 6:19:11 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-11-418
+oct. 13, 2023 6:19:11 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-11-519
+oct. 13, 2023 6:19:11 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-11-595
+oct. 13, 2023 6:19:11 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-11-651
+oct. 13, 2023 6:19:12 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-12-196
+2023.10.13 18:19:14 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/service/AttribuerCandidatService.java
+oct. 13, 2023 6:19:14 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-14-299
+oct. 13, 2023 6:19:14 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-14-341
+oct. 13, 2023 6:19:14 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-14-422
+oct. 13, 2023 6:19:14 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-14-478
+oct. 13, 2023 6:19:14 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-14-544
+oct. 13, 2023 6:19:15 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-15-403
+2023.10.13 18:19:44 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/controller/AttribuerCandidatController.java
+2023.10.13 18:19:44 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/controller/AttribuerCandidatController.java. Output:
+
+oct. 13, 2023 6:19:45 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-45-222
+oct. 13, 2023 6:19:45 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-45-333
+oct. 13, 2023 6:19:45 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-45-530
+oct. 13, 2023 6:19:45 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-45-701
+oct. 13, 2023 6:19:45 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-45-809
+oct. 13, 2023 6:19:45 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-45-904
+oct. 13, 2023 6:19:45 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-45-997
+2023.10.13 18:19:46 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/controller/AttribuerCandidatController.java
+2023.10.13 18:19:46 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/controller/AttribuerCandidatController.java. Output:
+
+oct. 13, 2023 6:19:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-46-417
+oct. 13, 2023 6:19:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-46-470
+oct. 13, 2023 6:19:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-46-537
+oct. 13, 2023 6:19:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-46-627
+oct. 13, 2023 6:19:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-46-740
+oct. 13, 2023 6:19:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-46-901
+oct. 13, 2023 6:19:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-47-013
+2023.10.13 18:19:47 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/controller/AttribuerCandidatController.java
+2023.10.13 18:19:47 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/controller/AttribuerCandidatController.java. Output:
+
+oct. 13, 2023 6:19:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-47-686
+oct. 13, 2023 6:19:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-47-858
+oct. 13, 2023 6:19:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-47-950
+oct. 13, 2023 6:19:48 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-48-016
+oct. 13, 2023 6:19:48 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-48-208
+oct. 13, 2023 6:19:48 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-19-48-322
+oct. 13, 2023 6:20:26 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-20-26-756
+oct. 13, 2023 6:20:31 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-20-31-522
+2023.10.13 18:21:04 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/exception/GlobalExceptionHandler.java
+2023.10.13 18:21:04 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/exception/GlobalExceptionHandler.java. Output:
+
+oct. 13, 2023 6:21:04 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-04-144
+oct. 13, 2023 6:21:04 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-04-329
+oct. 13, 2023 6:21:04 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-04-464
+oct. 13, 2023 6:21:04 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-04-622
+oct. 13, 2023 6:21:04 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-04-760
+oct. 13, 2023 6:21:04 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-04-806
+oct. 13, 2023 6:21:04 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-04-936
+oct. 13, 2023 6:21:05 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-05-024
+oct. 13, 2023 6:21:05 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-05-722
+2023.10.13 18:21:06 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/exception/GlobalExceptionHandler.java
+2023.10.13 18:21:06 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/exception/GlobalExceptionHandler.java. Output:
+
+oct. 13, 2023 6:21:06 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-06-563
+oct. 13, 2023 6:21:06 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-06-703
+oct. 13, 2023 6:21:06 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-06-859
+oct. 13, 2023 6:21:06 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-06-950
+oct. 13, 2023 6:21:07 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-07-097
+oct. 13, 2023 6:21:07 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-07-242
+oct. 13, 2023 6:21:07 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-07-334
+oct. 13, 2023 6:21:08 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-08-399
+oct. 13, 2023 6:21:08 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-08-744
+oct. 13, 2023 6:21:10 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-10-215
+oct. 13, 2023 6:21:43 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-43-783
+oct. 13, 2023 6:21:44 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-44-188
+oct. 13, 2023 6:21:44 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-44-698
+oct. 13, 2023 6:21:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-46-113
+oct. 13, 2023 6:21:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-46-375
+oct. 13, 2023 6:21:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-46-724
+oct. 13, 2023 6:21:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-46-823
+oct. 13, 2023 6:21:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-47-175
+oct. 13, 2023 6:21:47 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-47-665
+2023.10.13 18:21:48 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/exception/GlobalExceptionHandler.java
+2023.10.13 18:21:48 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/exception/GlobalExceptionHandler.java. Output:
+
+oct. 13, 2023 6:21:48 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-48-211
+oct. 13, 2023 6:21:48 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-48-722
+oct. 13, 2023 6:21:49 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-49-138
+oct. 13, 2023 6:21:49 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-49-341
+oct. 13, 2023 6:21:49 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-49-820
+oct. 13, 2023 6:21:50 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-50-167
+oct. 13, 2023 6:21:50 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-50-767
+2023.10.13 18:21:50 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/exception/GlobalExceptionHandler.java
+2023.10.13 18:21:51 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/exception/GlobalExceptionHandler.java. Output:
+
+oct. 13, 2023 6:21:51 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-51-194
+2023.10.13 18:21:52 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/exception/GlobalExceptionHandler.java
+oct. 13, 2023 6:21:52 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-52-111
+oct. 13, 2023 6:21:52 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-52-664
+oct. 13, 2023 6:21:53 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-53-178
+oct. 13, 2023 6:21:53 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-53-531
+oct. 13, 2023 6:21:55 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-55-758
+oct. 13, 2023 6:21:55 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-55-980
+oct. 13, 2023 6:21:56 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-56-230
+oct. 13, 2023 6:21:56 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-56-482
+oct. 13, 2023 6:21:56 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-56-683
+oct. 13, 2023 6:21:58 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-21-58-568
+oct. 13, 2023 6:22:00 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-22-00-293
+oct. 13, 2023 6:22:04 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-22-04-013
+Exception in thread "pool-1-thread-92" java.lang.OutOfMemoryError: Java heap space
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor$$$Lambda$2926/0x0000000840ddc040.get$Lambda(Unknown Source)
+	at java.base/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base/java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor$.findComments$1(JavaFoldingRangeExtractor.scala:146)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor$.findComments(JavaFoldingRangeExtractor.scala:161)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor$.extract(JavaFoldingRangeExtractor.scala:180)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.meta.internal.parsing.FoldingRangeProvider$$Lambda$1249/0x00000008405db840.apply(Unknown Source)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:45)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1589)
+	at scala.meta.internal.metals.MetalsLspService$$Lambda$1243/0x00000008405d7040.apply(Unknown Source)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.Future$$$Lambda$973/0x000000084043f040.apply(Unknown Source)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+java.lang.OutOfMemoryError: Java heap space while typechecking /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/model/Offre.java
+oct. 13, 2023 6:22:40 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-22-40-355
+Exception in thread "pool-1-thread-85" java.lang.OutOfMemoryError: Java heap space
+2023.10.13 18:25:15 ERROR text document: file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/exception/GlobalExceptionHandler.java
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Mémoire insuffisante.
+Out of memory. [90108-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.engine.Database.throwLastBackgroundException(Database.java:1782)
+	at org.h2.engine.SessionLocal.beforeCommitOrRollback(SessionLocal.java:754)
+	at org.h2.engine.SessionLocal.commit(SessionLocal.java:668)
+	at org.h2.command.Command.stop(Command.java:157)
+	at org.h2.command.CommandContainer.stop(CommandContainer.java:259)
+	at org.h2.command.Command.executeQuery(Command.java:229)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:128)
+	at scala.meta.internal.metals.JdbcEnrichments$XtensionConnection.query(JdbcEnrichments.scala:37)
+	at scala.meta.internal.metals.DependencySources.getBuildTarget(DependencySources.scala:27)
+	at scala.meta.internal.metals.BuildTargets.$anonfun$inverseSources$2(BuildTargets.scala:236)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.BuildTargets.inverseSources(BuildTargets.scala:236)
+	at scala.meta.internal.metals.FileSystemSemanticdbs.textDocument(FileSystemSemanticdbs.scala:33)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1574)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1572)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+Caused by: org.h2.message.DbException: Mémoire insuffisante.
+Out of memory. [90108-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:389)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.writeInBackground(MVStore.java:3254)
+	at org.h2.mvstore.MVStore$BackgroundWriterThread.run(MVStore.java:3775)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Mémoire insuffisante.
+Out of memory. [90108-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:389)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.writeInBackground(MVStore.java:3254)
+	at org.h2.mvstore.MVStore$BackgroundWriterThread.run(MVStore.java:3775)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+
+oct. 13, 2023 6:29:01 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-01-480
+oct. 13, 2023 6:29:02 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-02-187
+oct. 13, 2023 6:29:09 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-09-718
+2023.10.13 18:29:40 WARN  no build target for: /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/controller/AttribuerCandidatController.java
+oct. 13, 2023 6:29:41 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-41-017
+2023.10.13 18:29:41 WARN  Running javac-semanticdb failed for file:///home/ubuntu/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/controller/AttribuerCandidatController.java. Output:
+
+oct. 13, 2023 6:29:41 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-41-266
+oct. 13, 2023 6:29:41 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-41-461
+oct. 13, 2023 6:29:41 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-41-646
+oct. 13, 2023 6:29:41 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-41-866
+oct. 13, 2023 6:29:41 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-41-953
+oct. 13, 2023 6:29:42 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-42-084
+oct. 13, 2023 6:29:42 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-42-213
+oct. 13, 2023 6:29:49 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-29-49-691
+oct. 13, 2023 6:30:46 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-30-46-822
+oct. 13, 2023 6:35:44 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report /home/ubuntu/Bureau/Projet IWA/MS_Recrutements/IWA-Back-Recrutements-MS/.metals/.reports/metals-full/2023-10-13/r_compiler-error_18-35-44-293
