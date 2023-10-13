@@ -1,0 +1,57 @@
+java.util.NoSuchElementException: next on empty iterator
+occurred in the presentation compiler.
+
+action parameters:
+offset: 956
+uri: file://<HOME>/Bureau/Projet%20IWA/MS_Recrutements/IWA-Back-Recrutements-MS/recrutements/src/main/java/com/iwa/recrutements/model/AttribuerCandidat.java
+text:
+package com.iwa.recrutements.model;
+
+import javax.persistence.*;
+import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "attribuer_candidat")
+@Data               // Generates getters, setters, toString, equals, and hashCode methods
+@Builder            // Provides a builder pattern for object creation
+@NoArgsConstructor  // Generates a no-args constructor
+@AllArgsConstructor // Generates a constructor with all fields as arguments
+public class AttribuerCandidat {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    // une colonne email_candidat d'une entité faible qui n'est pas une table et dont l'id est l'email du candidat
+    @Column(name = "email_candidat")
+    private String emailCandidat;
+
+    @ManyToOne
+    @JoinColumn(name = "id_offre")
+    private Offre offre;
+
+    @Column(name = "note")
+    private @@Float note;
+    
+
+    // Getters, setters, constructors, etc.
+
+}
+
+
+
+error stacktrace:
+scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
+	scala.collection.Iterator$$anon$19.next(Iterator.scala:971)
+	scala.collection.mutable.MutationTracker$CheckedIterator.next(MutationTracker.scala:76)
+	scala.collection.IterableOps.head(Iterable.scala:222)
+	scala.collection.IterableOps.head$(Iterable.scala:222)
+	scala.collection.AbstractIterable.head(Iterable.scala:933)
+	dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:168)
+	scala.meta.internal.pc.MetalsDriver.run(MetalsDriver.scala:45)
+	scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:34)
+	scala.meta.internal.pc.ScalaPresentationCompiler.hover$$anonfun$1(ScalaPresentationCompiler.scala:325)
