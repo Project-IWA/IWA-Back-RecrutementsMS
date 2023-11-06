@@ -45,6 +45,12 @@ public class Offre {
     @OneToMany(mappedBy = "offre")
     private Set<AttribuerCandidat> attributions;
 
+    private Long id_user;
+
+    private Long id_etablissement;
+
+
+
     // Getters, setters, constructors, etc.
     // pas besoin de getters et setters car on utilise lombok
 
