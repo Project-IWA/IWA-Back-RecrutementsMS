@@ -4,6 +4,13 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Application Properties ###
+application.Properties
+application.yml
+application.yaml
+application-dev.yml
+application-dev.yaml
+
 ### STS ###
 .apt_generated
 .classpath
@@ -31,3 +38,5 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
