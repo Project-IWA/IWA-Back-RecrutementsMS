@@ -11,8 +11,12 @@ import java.util.Optional;
 @Service
 public class AttribuerCandidatService {
 
-    @Autowired
     private AttribuerCandidatRepository attribuerCandidatRepository;
+
+    @Autowired
+    public AttribuerCandidatService(AttribuerCandidatRepository attribuerCandidatRepository) {
+        this.attribuerCandidatRepository = attribuerCandidatRepository;
+    }
 
     public List<AttribuerCandidat> getAllAttributions() {
         return attribuerCandidatRepository.findAll();

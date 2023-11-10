@@ -20,7 +20,7 @@ public class AttribuerCandidat {
 
     // une colonne email_candidat d'une entité faible qui n'est pas une table et dont l'id est l'email du candidat
     @Column(name = "email_candidat")
-    private String emailCandidat;
+    private String email_candidat;
 
     @ManyToOne
     @JoinColumn(name = "id_offre")

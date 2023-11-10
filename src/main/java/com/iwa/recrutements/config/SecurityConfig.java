@@ -10,29 +10,15 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class SecurityConfig {
-    
+
     @Bean
-    public SecurityFilterChain apiSecurity(HttpSecurity http) throws Exception {
-        http
-            .authorizeHttpRequests((auth) -> auth
-                .antMatchers("/api/attribution/**").permitAll()
-                .anyRequest().authenticated()
-        ).httpBasic();
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+
+        http.csrf((csrf) -> csrf.disable())
+                .authorizeRequests()
+                .anyRequest().permitAll(); // Allow all requests
         return http.build();
+
     }
 
-    /* @Bean
-    public InMemoryUserDetailsManager userDetailsManager() {
-        UserDetails user = User.builder()
-            .username("user")
-            .password("user")
-            .roles("ROLE_USER")
-            .build();
-        UserDetails admin = User.builder()
-            .username("admin")
-            .password("admin")
-            .roles("ROLE_ADMIN")
-            .build();
-        return new InMemoryUserDetailsManager(user, admin);
-    } */
 }

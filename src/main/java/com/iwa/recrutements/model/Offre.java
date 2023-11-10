@@ -19,16 +19,17 @@ public class Offre {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "id_offre")  // This maps the field to the id_offre column in the database
+    private Long id_offre;
 
     @Column(name = "emploi")
     private String emploi;
 
     @Column(name = "date_debut")
-    private Date dateDebut;
+    private Date date_debut;
 
     @Column(name = "date_fin")
-    private Date dateFin;
+    private Date date_fin;
 
     @Column(name = "salaire")
     private Double salaire;
@@ -40,16 +41,16 @@ public class Offre {
     private String etat;
 
     @Column(name = "nombre_candidats")
-    private Integer nombreCandidats;
+    private Integer nombre_candidats;
 
     @OneToMany(mappedBy = "offre")
     private Set<AttribuerCandidat> attributions;
 
+    @Column(name = "id_user")
     private Long id_user;
 
+    @Column(name = "id_etablissement")
     private Long id_etablissement;
-
-
 
     // Getters, setters, constructors, etc.
     // pas besoin de getters et setters car on utilise lombok
