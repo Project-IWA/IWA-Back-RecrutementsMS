@@ -37,7 +37,7 @@ public class OffreController {
     @PutMapping("/{id}")
     public ResponseEntity<Offre> updateOffre(@PathVariable Long id, @RequestBody Offre offre) {
         // Ensure the ID is set to the path variable
-        offre.setId_offre(id);
+        offre.setIdOffre(id);
         return ResponseEntity.ok(offreService.save(offre));
     }
 

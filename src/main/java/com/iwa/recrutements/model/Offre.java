@@ -1,12 +1,14 @@
 package com.iwa.recrutements.model;
 
 import javax.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -20,16 +22,19 @@ public class Offre {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_offre")  // This maps the field to the id_offre column in the database
-    private Long id_offre;
+    @JsonProperty("id_offre")
+    private Long idOffre;
 
     @Column(name = "emploi")
     private String emploi;
 
     @Column(name = "date_debut")
-    private Date date_debut;
+    @JsonProperty("date_debut")
+    private Date dateDebut;
 
     @Column(name = "date_fin")
-    private Date date_fin;
+    @JsonProperty("date_fin")
+    private Date dateFin;
 
     @Column(name = "salaire")
     private Double salaire;
@@ -41,16 +46,22 @@ public class Offre {
     private String etat;
 
     @Column(name = "nombre_candidats")
-    private Integer nombre_candidats;
+    @JsonProperty("nombre_candidats")
+    private Integer nombreCandidats;
 
-    @OneToMany(mappedBy = "offre")
+    @JsonManagedReference
+    @OneToMany(mappedBy = "offre", cascade = CascadeType.ALL, orphanRemoval = true)
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
     private Set<AttribuerCandidat> attributions;
 
     @Column(name = "id_user")
-    private Long id_user;
+    @JsonProperty("id_user")
+    private Long idUser;
 
     @Column(name = "id_etablissement")
-    private Long id_etablissement;
+    @JsonProperty("id_etablissement")
+    private Long idEtablissement;
 
     // Getters, setters, constructors, etc.
     // pas besoin de getters et setters car on utilise lombok

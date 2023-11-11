@@ -1,38 +1,43 @@
 package com.iwa.recrutements.model;
 
 import javax.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
 
 @Entity
 @Table(name = "attribuer_candidat")
 @Data               // Generates getters, setters, toString, equals, and hashCode methods
+@IdClass(AttribuerCandidatId.class) // Composite primary key
 @Builder            // Provides a builder pattern for object creation
 @NoArgsConstructor  // Generates a no-args constructor
 @AllArgsConstructor // Generates a constructor with all fields as arguments
 public class AttribuerCandidat {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "id_offre")
+    @JsonProperty("id_offre")
+    private Long idOffre;
 
     // une colonne email_candidat d'une entité faible qui n'est pas une table et dont l'id est l'email du candidat
+    @Id
     @Column(name = "email_candidat")
-    private String email_candidat;
-
-    @ManyToOne
-    @JoinColumn(name = "id_offre")
-    private Offre offre;
+    @JsonProperty("email_candidat")
+    private String emailCandidat;
 
     @Column(name = "note")
-    private float note;
+    private String note;
 
-    @Column(name = "avis")
+    @Column(name = "avis", length = 500)
     private String avis;
 
-    // Getters, setters, constructors, etc.
-    // pas besoin de getters et setters car on utilise lombok
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_offre", insertable = false, updatable = false)
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    private Offre offre;
 
+    // pas besoin de getters et setters car on utilise lombok
 }

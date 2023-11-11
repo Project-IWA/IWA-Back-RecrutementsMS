@@ -12,29 +12,45 @@ import java.util.List;
 @RequestMapping("/api/attributions")
 public class AttribuerCandidatController {
 
-    @Autowired
     private AttribuerCandidatService attribuerCandidatService;
 
+    @Autowired
+    public AttribuerCandidatController(AttribuerCandidatService attribuerCandidatService) {
+        this.attribuerCandidatService = attribuerCandidatService;
+    }
+
+    // Get all attributions
     @GetMapping
     public ResponseEntity<List<AttribuerCandidat>> getAllAttributions() {
         return ResponseEntity.ok(attribuerCandidatService.getAllAttributions());
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<AttribuerCandidat> getAttributionById(@PathVariable Long id) {
-        return attribuerCandidatService.getAttributionById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+    // Get attribution by id offre
+    @GetMapping("/offre/{idOffre}")
+    public ResponseEntity<List<AttribuerCandidat>> getAttributionsByIdOffre(@PathVariable Long idOffre) {
+        return ResponseEntity.ok(attribuerCandidatService.getAttributionsByIdOffre(idOffre));
+    }
+
+    // Get attribution by email candidat
+    @GetMapping("/candidat/{emailCandidat}")
+    public ResponseEntity<List<AttribuerCandidat>> getAttributionsByEmailCandidat(@PathVariable String emailCandidat) {
+        return ResponseEntity.ok(attribuerCandidatService.getAttributionsByEmailCandidat(emailCandidat));
     }
 
     @PostMapping
-    public ResponseEntity<AttribuerCandidat> createOrUpdateAttribution(@RequestBody AttribuerCandidat attribuerCandidat) {
-        return ResponseEntity.ok(attribuerCandidatService.saveOrUpdateAttribution(attribuerCandidat));
+    public ResponseEntity<AttribuerCandidat> createAttribution(@RequestBody AttribuerCandidat attribuerCandidat) {
+        return ResponseEntity.ok(attribuerCandidatService.saveAttribution(attribuerCandidat));
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteAttribution(@PathVariable Long id) {
-        attribuerCandidatService.deleteAttribution(id);
+    @PutMapping
+    public ResponseEntity<AttribuerCandidat> updateAttribution(@RequestBody AttribuerCandidat attribuerCandidat) {
+        return ResponseEntity.ok(attribuerCandidatService.saveAttribution(attribuerCandidat));
+    }
+
+    // delete attribution by id offre and email candidat
+    @DeleteMapping("/{idOffre}/{emailCandidat}")
+    public ResponseEntity<Void> deleteAttribution(@PathVariable Long idOffre, @PathVariable String emailCandidat) {
+        attribuerCandidatService.deleteAttribution(idOffre, emailCandidat);
         return ResponseEntity.noContent().build();
     }
 
