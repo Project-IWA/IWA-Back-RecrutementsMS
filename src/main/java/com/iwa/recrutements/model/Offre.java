@@ -22,18 +22,18 @@ public class Offre {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_offre")  // This maps the field to the id_offre column in the database
-    @JsonProperty("id_offre")
     private Long idOffre;
 
     @Column(name = "emploi")
     private String emploi;
 
+    @Column(name = "description", length = 500)
+    private String description;
+
     @Column(name = "date_debut")
-    @JsonProperty("date_debut")
     private Date dateDebut;
 
     @Column(name = "date_fin")
-    @JsonProperty("date_fin")
     private Date dateFin;
 
     @Column(name = "salaire")
@@ -46,7 +46,6 @@ public class Offre {
     private String etat;
 
     @Column(name = "nombre_candidats")
-    @JsonProperty("nombre_candidats")
     private Integer nombreCandidats;
 
     @JsonManagedReference
@@ -56,11 +55,9 @@ public class Offre {
     private Set<AttribuerCandidat> attributions;
 
     @Column(name = "id_user")
-    @JsonProperty("id_user")
     private Long idUser;
 
     @Column(name = "id_etablissement")
-    @JsonProperty("id_etablissement")
     private Long idEtablissement;
 
     // Getters, setters, constructors, etc.

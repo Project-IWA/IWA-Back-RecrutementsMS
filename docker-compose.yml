@@ -8,7 +8,7 @@ services:
     depends_on:
       - postgres
 
-  postgres:
+  recrutements-postgres:
     image: postgres
     ports:
       - "5434:5432"

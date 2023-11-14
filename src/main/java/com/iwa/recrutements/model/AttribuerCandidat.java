@@ -17,13 +17,11 @@ public class AttribuerCandidat {
 
     @Id
     @Column(name = "id_offre")
-    @JsonProperty("id_offre")
     private Long idOffre;
 
     // une colonne email_candidat d'une entité faible qui n'est pas une table et dont l'id est l'email du candidat
     @Id
     @Column(name = "email_candidat")
-    @JsonProperty("email_candidat")
     private String emailCandidat;
 
     @Column(name = "note")
