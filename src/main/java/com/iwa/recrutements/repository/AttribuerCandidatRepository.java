@@ -11,5 +11,7 @@ import java.util.List;
 public interface AttribuerCandidatRepository extends JpaRepository<AttribuerCandidat, AttribuerCandidatId> {
     List<AttribuerCandidat> findByIdOffre(Long idOffre);
     List<AttribuerCandidat> findByEmailCandidat(String emailCandidat);
+
+    int countByIdOffre(Long idOffre);
     // Other necessary query methods
 }

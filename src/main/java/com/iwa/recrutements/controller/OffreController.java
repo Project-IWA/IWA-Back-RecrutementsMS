@@ -27,10 +27,20 @@ public class OffreController {
         return ResponseEntity.ok(offreService.getOffreById(id));
     }
 
+    // Endpoint pour récupérer les offres avec attributions et infos candidats pour un utilisateur donné
+    @GetMapping("/user/{idUser}")
+    public ResponseEntity<List<Offre>> getOffresWithAttributionsAndCandidatInfo(@PathVariable Long idUser) {
+        List<Offre> offres = offreService.getOffresWithAttributionsAndCandidatInfo(idUser);
+        if (offres.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(offres);
+    }
+
     // create offre
     @PostMapping
     public ResponseEntity<Offre> createOffre(@RequestBody Offre offre) {
-        return ResponseEntity.ok(offreService.save(offre));
+        return ResponseEntity.ok(offreService.saveOrUpdateOffre(offre));
     }
 
     // update offre
@@ -38,7 +48,7 @@ public class OffreController {
     public ResponseEntity<Offre> updateOffre(@PathVariable Long id, @RequestBody Offre offre) {
         // Ensure the ID is set to the path variable
         offre.setIdOffre(id);
-        return ResponseEntity.ok(offreService.save(offre));
+        return ResponseEntity.ok(offreService.saveOrUpdateOffre(offre));
     }
 
     // delete offre
