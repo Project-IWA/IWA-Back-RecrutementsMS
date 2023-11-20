@@ -20,5 +20,11 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
     }
 
+    // Gère une exception spécifique : TypeEmploiNotFoundException
+    @ExceptionHandler(TypeEmploiNotFoundException.class)
+    public ResponseEntity<Object> handleTypeEmploiNotFoundException(TypeEmploiNotFoundException ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+    }
+
     // You can add more handlers for other exceptions if needed
 }

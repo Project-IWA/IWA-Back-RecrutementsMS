@@ -60,6 +60,10 @@ public class Offre {
     @Column(name = "id_etablissement")
     private Long idEtablissement;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_type_emploi", insertable = false, updatable = false)
+    private TypeEmploi typeEmploi;
+
     // Getters, setters, constructors, etc.
     // pas besoin de getters et setters car on utilise lombok
 

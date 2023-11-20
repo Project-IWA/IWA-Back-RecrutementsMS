@@ -20,7 +20,8 @@ public class AttribuerCandidatService {
     private OffreRepository offreRepository;
 
     @Autowired
-    public AttribuerCandidatService(AttribuerCandidatRepository attribuerCandidatRepository, OffreRepository offreRepository) {
+    public AttribuerCandidatService(AttribuerCandidatRepository attribuerCandidatRepository,
+                                    OffreRepository offreRepository) {
         this.attribuerCandidatRepository = attribuerCandidatRepository;
         this.offreRepository = offreRepository;
     }
@@ -29,12 +30,18 @@ public class AttribuerCandidatService {
         return attribuerCandidatRepository.findAll();
     }
 
+    // get all attributions by idOffre, which means the attributions that have all the offres that has the id of the user in the header
     public List<AttribuerCandidat> getAttributionsByIdOffre(Long idOffre) {
         return attribuerCandidatRepository.findByIdOffre(idOffre);
     }
 
     public List<AttribuerCandidat> getAttributionsByEmailCandidat(String emailCandidat) {
         return attribuerCandidatRepository.findByEmailCandidat(emailCandidat);
+    }
+
+    // get all attributions by idUser, which means the attributions that have the offre that has the id of the user in the header
+    public List<AttribuerCandidat> getAllAttributionsByUserId(Long userId) {
+        return attribuerCandidatRepository.findAllByIdUser(userId);
     }
 
     @Transactional

@@ -1,0 +1,18 @@
+INSERT INTO type_emploi (nom) VALUES
+                                  ('Agriculture, Viticulture, Pêche'),
+                                  ('Hôtellerie de plein air, Club vacances, Camping, Animation'),
+                                  ('Hôtels, cafés, bars, restaurants'),
+                                  ('Evénementiel'),
+                                  ('Casinos, Parcs d''attraction'),
+                                  ('Administration, Espaces culturels, Tourisme'),
+                                  ('Zoo, Espaces de loisirs'),
+                                  ('Montagne, Ski'),
+                                  ('Mer, Plongée, Sports/Loisirs Nautiques'),
+                                  ('Jardineries, Graineteries'),
+                                  ('Sécurité, Gardiennage'),
+                                  ('Logistique, Transport'),
+                                  ('Baby sitting, Services à la personne'),
+                                  ('Commerce, Achats, Vente'),
+                                  ('SPA, Esthétique, Coiffure'),
+                                  ('Arts, Festivals, Spectacles'),
+                                  ('Autre');
