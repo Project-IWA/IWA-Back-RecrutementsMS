@@ -69,9 +69,10 @@ public class AttribuerCandidatController {
 
     // Update attribution only for the offre owner, which means the offre that has the id of the user in the header
     @PutMapping
-    public ResponseEntity<AttribuerCandidat> updateAttribution(@RequestBody AttribuerCandidat attribuerCandidat) {
+    public ResponseEntity<AttribuerCandidat> updateAttribution(@RequestBody AttribuerCandidat attribuerCandidat,
+                                                               @RequestHeader("AuthUserId") Long userId) {
         Offre offre = offreService.getOffreById(attribuerCandidat.getIdOffre());
-        if (offre.getIdUser() != attribuerCandidat.getIdOffre()) {
+        if (offre.getIdUser() != userId) {
             return ResponseEntity.badRequest().build();
         }
         return ResponseEntity.ok(attribuerCandidatService.saveAttribution(attribuerCandidat));
@@ -79,9 +80,10 @@ public class AttribuerCandidatController {
 
     // delete attribution by id offre and email candidat only for the offre owner, which means the offre that has the id of the user in the header
     @DeleteMapping("/{idOffre}/{emailCandidat}")
-    public ResponseEntity<Void> deleteAttribution(@PathVariable Long idOffre, @PathVariable String emailCandidat) {
+    public ResponseEntity<Void> deleteAttribution(@PathVariable Long idOffre, @PathVariable String emailCandidat,
+                                                  @RequestHeader("AuthUserId") Long userId) {
         Offre offre = offreService.getOffreById(idOffre);
-        if (offre.getIdUser() != idOffre) {
+        if (offre.getIdUser() != userId) {
             return ResponseEntity.badRequest().build();
         }
         attribuerCandidatService.deleteAttribution(idOffre, emailCandidat);

@@ -11,18 +11,21 @@ public class GlobalExceptionHandler {
     // Gère toutes les autres exceptions non spécifiées
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handleAllExceptions(Exception ex) {
+        System.out.println("Exception: " + ex.getMessage());
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
     // Gère une exception spécifique : ResourceNotFoundException
     @ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity<Object> handleResourceNotFoundException(ResourceNotFoundException ex) {
+        System.out.println("Exception: " + ex.getMessage());
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
     }
 
     // Gère une exception spécifique : TypeEmploiNotFoundException
     @ExceptionHandler(TypeEmploiNotFoundException.class)
     public ResponseEntity<Object> handleTypeEmploiNotFoundException(TypeEmploiNotFoundException ex) {
+        System.out.println("Exception: " + ex.getMessage());
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
     }
 

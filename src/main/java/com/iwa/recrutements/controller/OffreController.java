@@ -36,9 +36,13 @@ return ResponseEntity.ok(offreService.getAllOffresByUserId(userId));
         // check if the user id in the header is the same as the user id in the body
         // If not, set the user id in the body to the user id in the header
         if (userId != offrePostDTO.getIdUser()) {
+            System.out.println("userId" + userId);
+            System.out.println("offrePostDTO.getIdUser()" + offrePostDTO.getIdUser());
             offrePostDTO.setIdUser(userId);
+            System.out.println("offrePostDTO.getIdUser()" + offrePostDTO.getIdUser());
         }
         Offre offre = offreService.mapDtoToEntity(offrePostDTO);
+        System.out.println("offre in controller : " + offre);
         return ResponseEntity.ok(offreService.save(offre));
     }
 
@@ -46,13 +50,17 @@ return ResponseEntity.ok(offreService.getAllOffresByUserId(userId));
     // Only the user that sent the request can update his offre
     @PutMapping("/{idOffre}")
     public ResponseEntity<Offre> updateOffre(@PathVariable Long idOffre,
-                                             @RequestBody Offre offre,
+                                             @RequestBody OffrePostDTO offrePostDTO,
                                              @RequestHeader("AuthUserId") Long userId) {
         // check if the user id in the header is the same as the user id in the body
         // If not, bad request
-        if (userId != offre.getIdOffre()) {
+        if (userId != offrePostDTO.getIdUser()) {
             return ResponseEntity.badRequest().build();
         }
+
+        // Map the dto to offre model
+        Offre offre = offreService.mapDtoToEntity(offrePostDTO);
+
         // Ensure the ID is set to the path variable
         offre.setIdOffre(idOffre);
         return ResponseEntity.ok(offreService.save(offre));
@@ -65,7 +73,8 @@ return ResponseEntity.ok(offreService.getAllOffresByUserId(userId));
                                             @RequestHeader("AuthUserId") Long userId) {
         // check if the user id in the header is the same as the user id in the body
         // If not, bad request
-        if (userId != idOffre) {
+        Offre offre = offreService.getOffreById(idOffre);
+        if (userId != offre.getIdUser()) {
             return ResponseEntity.badRequest().build();
         }
         offreService.delete(idOffre);
