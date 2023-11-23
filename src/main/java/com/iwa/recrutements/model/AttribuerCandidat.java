@@ -23,7 +23,6 @@ public class AttribuerCandidat {
     // une colonne email_candidat d'une entité faible qui n'est pas une table et dont l'id est l'email du candidat
     @Id
     @Column(name = "email_candidat")
-    @JsonProperty("candidat")
     private String emailCandidat;
 
     @Transient

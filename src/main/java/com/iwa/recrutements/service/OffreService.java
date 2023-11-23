@@ -14,10 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class OffreService {
@@ -94,6 +91,23 @@ public class OffreService {
             // Handle the error
             System.out.println("Error triggering the matching process: " + response.getStatusCode());
         }
+    }
+
+    // Dans OffreService
+    public boolean isOffreOwnedByUser(Long offreId, Long userId) {
+        return offreRepository.findByIdOffreAndIdUser(offreId, userId).isPresent();
+    }
+
+    // Méthode dans OffreService pour appeler Matching Service
+    public List<Candidat> getMatchedCandidatsForOffre(Long offreId) {
+        String url = matchingServiceUrl + "/api/matching/execute/" + offreId;
+        Candidat[] matchedCandidats = restTemplate.getForObject(url, Candidat[].class);
+        return Arrays.asList(matchedCandidats);
+    }
+
+    public Candidat getCandidatDetails(String email) {
+        String url = candidatsServiceUrl + "/api/candidats/{email}";
+        return restTemplate.getForObject(url, Candidat.class, email);
     }
 
     // Delete offre
