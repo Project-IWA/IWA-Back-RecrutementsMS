@@ -4,6 +4,7 @@ import com.iwa.recrutements.dto.OffrePostDTO;
 import com.iwa.recrutements.model.Offre;
 import com.iwa.recrutements.service.OffreService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -43,7 +44,9 @@ return ResponseEntity.ok(offreService.getAllOffresByUserId(userId));
         }
         Offre offre = offreService.mapDtoToEntity(offrePostDTO);
         System.out.println("offre in controller : " + offre);
-        return ResponseEntity.ok(offreService.save(offre));
+        // save and return 204 created
+        Offre offreCreated = offreService.save(offre);
+        return new ResponseEntity<>(offreCreated, HttpStatus.CREATED);
     }
 
     // update offre
