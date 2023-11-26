@@ -16,5 +16,8 @@ public interface AttribuerCandidatRepository extends JpaRepository<AttribuerCand
 
     @Query("SELECT ac FROM AttribuerCandidat ac JOIN ac.offre o WHERE o.idUser = :userId")
     List<AttribuerCandidat> findAllByIdUser(@Param("userId") Long userId);
+
+    int countByIdOffre(Long idOffre);
+
     // Other necessary query methods
 }

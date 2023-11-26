@@ -24,6 +24,9 @@ public class AttribuerCandidat {
     @Column(name = "email_candidat")
     private String emailCandidat;
 
+    @Transient
+    private Candidat candidat; // Données récupérées du microservice "API Candidat"
+
     @Column(name = "note")
     private String note;
 

@@ -1,6 +1,7 @@
 package com.iwa.recrutements.controller;
 
 import com.iwa.recrutements.dto.OffrePostDTO;
+import com.iwa.recrutements.model.Candidat;
 import com.iwa.recrutements.model.Offre;
 import com.iwa.recrutements.service.OffreService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,38 @@ return ResponseEntity.ok(offreService.getAllOffresByUserId(userId));
         return ResponseEntity.ok(offreService.getOffreById(id));
     }
 
+    // Endpoint pour récupérer les offres avec attributions et infos candidats pour un utilisateur donné
+    @GetMapping("/user/{idUser}")
+    public ResponseEntity<List<Offre>> getOffresWithAttributionsAndCandidatInfo(@PathVariable Long idUser) {
+        List<Offre> offres = offreService.getOffresWithAttributionsAndCandidatInfo(idUser);
+        if (offres.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(offres);
+    }
+
+    @GetMapping("/user/{userId}/{offreId}/matched-candidats")
+    public ResponseEntity<?> getMatchedCandidatsForUserOffre(
+            @PathVariable Long userId,
+            @PathVariable Long offreId) {
+
+        // Vérifie si l'utilisateur possède l'offre
+        if (!offreService.isOffreOwnedByUser(offreId, userId)) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("This offer does not belong to the user.");
+        }
+
+        // Récupère les candidats matchés pour l'offre
+        List<Candidat> matchedCandidats = offreService.getMatchedCandidatsForOffre(offreId);
+
+        // Récupère les détails pour chaque candidat matché
+        matchedCandidats.forEach(candidat -> {
+            Candidat details = offreService.getCandidatDetails(candidat.getEmail());
+            candidat.setDetails(details); // Assurez-vous que la classe Candidat a une méthode setDetails
+        });
+
+        return ResponseEntity.ok(matchedCandidats);
+    }
+
     // create offre
     // Only the user that sent the request can create an offre with his id
     @PostMapping
@@ -45,7 +78,7 @@ return ResponseEntity.ok(offreService.getAllOffresByUserId(userId));
         Offre offre = offreService.mapDtoToEntity(offrePostDTO);
         System.out.println("offre in controller : " + offre);
         // save and return 204 created
-        Offre offreCreated = offreService.save(offre);
+        Offre offreCreated = offreService.saveOrUpdateOffre(offre);
         return new ResponseEntity<>(offreCreated, HttpStatus.CREATED);
     }
 
@@ -66,7 +99,7 @@ return ResponseEntity.ok(offreService.getAllOffresByUserId(userId));
 
         // Ensure the ID is set to the path variable
         offre.setIdOffre(idOffre);
-        return ResponseEntity.ok(offreService.save(offre));
+        return ResponseEntity.ok(offreService.saveOrUpdateOffre(offre));
     }
 
     // delete offre
