@@ -1,6 +1,7 @@
 package com.iwa.recrutements.service;
 
 import com.iwa.recrutements.dto.OffrePostDTO;
+import com.iwa.recrutements.exception.MatchingServiceException;
 import com.iwa.recrutements.exception.ResourceNotFoundException;
 import com.iwa.recrutements.exception.TypeEmploiNotFoundException;
 import com.iwa.recrutements.model.Offre;
@@ -128,6 +129,9 @@ public class OffreService {
         if (!offreRepository.existsById(id)) {
             throw new ResourceNotFoundException("Offre with id " + id + " not found");
         }
+        // Appeler le microservice Matching pour supprimer toutes les correspondances de l'offre
+        removeMatchesByOffreId(id);
+        // Supprimer l'offre
         offreRepository.deleteById(id);
     }
 
@@ -148,5 +152,16 @@ public class OffreService {
                 .idEtablissement(offrePostDTO.getIdEtablissement())
                 .typeEmploi(typeEmploi)
                 .build();
+    }
+
+    private void removeMatchesByOffreId(Long idOffre) {
+        String url = matchingServiceUrl + "/api/matching/remove-matches/" + idOffre;
+        try {
+            restTemplate.delete(url);
+        } catch (RestClientException e) {
+            // Log l'erreur ou gère le cas où l'appel échoue
+            throw new MatchingServiceException("Failed to remove matches for offre id: " + idOffre, e);
+        }
+
     }
 }
