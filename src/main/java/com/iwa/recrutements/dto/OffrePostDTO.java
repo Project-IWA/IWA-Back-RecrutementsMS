@@ -18,6 +18,7 @@ public class OffrePostDTO {
     private Long idUser;
     private Long idEtablissement;
     private Long idTypeEmploi; // Add this to reference the TypeEmploi by ID
+    private String ville;
 
     // Getters and setters
 }

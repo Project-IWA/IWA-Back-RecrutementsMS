@@ -28,7 +28,7 @@ public class AttribuerCandidat {
     private Candidat candidat; // Données récupérées du microservice "API Candidat"
 
     @Column(name = "note")
-    private String note;
+    private int note;
 
     @Column(name = "avis", length = 500)
     private String avis;

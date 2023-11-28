@@ -35,13 +35,19 @@ public class OffreService {
     @Value("${candidats.service.url}")
     private String candidatsServiceUrl;
 
+    private MatchingUtilityService matchingUtilityService;
+
     @Autowired
     public OffreService(OffreRepository offreRepository,
                         TypeEmploiService typeEmploiService,
-                        RestTemplateBuilder restTemplateBuilder) {
+                        RestTemplateBuilder restTemplateBuilder,
+                        AttribuerCandidatRepository attribuerCandidatRepository,
+                        MatchingUtilityService matchingUtilityService) {
         this.offreRepository = offreRepository;
         this.typeEmploiService = typeEmploiService;
+        this.attribuerCandidatRepository = attribuerCandidatRepository;
         this.restTemplate = restTemplateBuilder.build();
+        this.matchingUtilityService = matchingUtilityService;
     }
 
     // Get all offres
@@ -63,6 +69,7 @@ public class OffreService {
 
     public List<Offre> getOffresWithAttributionsAndCandidatInfo(Long idUser) {
         List<Offre> offres = offreRepository.findByIdUser(idUser);
+        System.out.println("Offres: " + offres);
         offres.forEach(offre -> {
             List<AttribuerCandidat> attributions = attribuerCandidatRepository.findByIdOffre(offre.getIdOffre());
             Map<String, Candidat> candidatCache = new HashMap<>();
@@ -80,6 +87,7 @@ public class OffreService {
                 attribution.setCandidat(candidat);
             });
             offre.setAttributions(new HashSet<>(attributions));
+            System.out.println("Offre: " + offre);
         });
         return offres;
     }
@@ -88,23 +96,8 @@ public class OffreService {
     public Offre saveOrUpdateOffre(Offre offre) {
         Offre savedOffre = offreRepository.save(offre);
         // After saving, trigger the matching process
-        triggerMatchingProcess(savedOffre.getIdOffre());
+        matchingUtilityService.triggerMatchingProcess();
         return savedOffre;
-    }
-
-    // Method to trigger the matching process
-    private void triggerMatchingProcess(Long offreId) {
-        // Construct the URL to call the Matching service
-        String executeMatchingUrl = matchingServiceUrl + "/api/matching/execute";
-
-        // Make the HTTP call to the Matching service
-        ResponseEntity<String> response = restTemplate.postForEntity(executeMatchingUrl, offreId, String.class);
-
-        // Check the response status and handle it accordingly
-        if (!response.getStatusCode().is2xxSuccessful()) {
-            // Handle the error
-            System.out.println("Error triggering the matching process: " + response.getStatusCode());
-        }
     }
 
     // Dans OffreService
@@ -114,13 +107,13 @@ public class OffreService {
 
     // Méthode dans OffreService pour appeler Matching Service
     public List<Candidat> getMatchedCandidatsForOffre(Long offreId) {
-        String url = matchingServiceUrl + "/api/matching/execute/" + offreId;
+        String url = matchingServiceUrl + "/api/matching/get-matches/" + offreId;
         Candidat[] matchedCandidats = restTemplate.getForObject(url, Candidat[].class);
         return Arrays.asList(matchedCandidats);
     }
 
     public Candidat getCandidatDetails(String email) {
-        String url = candidatsServiceUrl + "/api/candidats/{email}";
+        String url = candidatsServiceUrl + "/api/candidats/" + email;
         return restTemplate.getForObject(url, Candidat.class, email);
     }
 
@@ -130,7 +123,7 @@ public class OffreService {
             throw new ResourceNotFoundException("Offre with id " + id + " not found");
         }
         // Appeler le microservice Matching pour supprimer toutes les correspondances de l'offre
-        removeMatchesByOffreId(id);
+        matchingUtilityService.removeMatchesByOffreId(id);
         // Supprimer l'offre
         offreRepository.deleteById(id);
     }
@@ -151,17 +144,8 @@ public class OffreService {
                 .idUser(offrePostDTO.getIdUser())
                 .idEtablissement(offrePostDTO.getIdEtablissement())
                 .typeEmploi(typeEmploi)
+                .ville(offrePostDTO.getVille())
                 .build();
     }
 
-    private void removeMatchesByOffreId(Long idOffre) {
-        String url = matchingServiceUrl + "/api/matching/remove-matches/" + idOffre;
-        try {
-            restTemplate.delete(url);
-        } catch (RestClientException e) {
-            // Log l'erreur ou gère le cas où l'appel échoue
-            throw new MatchingServiceException("Failed to remove matches for offre id: " + idOffre, e);
-        }
-
-    }
 }

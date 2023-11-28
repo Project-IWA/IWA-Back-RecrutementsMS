@@ -48,6 +48,9 @@ public class Offre {
     @Column(name = "nombre_candidats")
     private Integer nombreCandidats;
 
+    @Column(name = "ville")
+    private String ville;
+
     @JsonManagedReference
     @OneToMany(mappedBy = "offre", cascade = CascadeType.ALL, orphanRemoval = true)
     @ToString.Exclude

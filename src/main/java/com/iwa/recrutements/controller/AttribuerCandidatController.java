@@ -75,7 +75,7 @@ public class AttribuerCandidatController {
         if (offre.getIdUser() != userId) {
             return ResponseEntity.badRequest().build();
         }
-        return ResponseEntity.ok(attribuerCandidatService.saveAttribution(attribuerCandidat));
+        return ResponseEntity.ok(attribuerCandidatService.updateAttribution(attribuerCandidat));
     }
 
     // delete attribution by id offre and email candidat only for the offre owner, which means the offre that has the id of the user in the header

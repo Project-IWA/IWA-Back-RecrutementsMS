@@ -1,6 +1,7 @@
 package com.iwa.recrutements.controller;
 
 import com.iwa.recrutements.dto.OffrePostDTO;
+import com.iwa.recrutements.exception.DateDebutAfterDateFinException;
 import com.iwa.recrutements.model.Candidat;
 import com.iwa.recrutements.model.Offre;
 import com.iwa.recrutements.service.OffreService;
@@ -18,10 +19,10 @@ public class OffreController {
     @Autowired
     private OffreService offreService;
 
-    // Get all offres for the user with the id in the header
+    // Get all offres from db
     @GetMapping
-    public ResponseEntity<List<Offre>> getAllOffres(@RequestHeader("AuthUserId") Long userId) {
-return ResponseEntity.ok(offreService.getAllOffresByUserId(userId));
+    public ResponseEntity<List<Offre>> getAllOffres() {
+        return ResponseEntity.ok(offreService.getAllOffres());
     }
 
     // Get offre by id
@@ -31,18 +32,18 @@ return ResponseEntity.ok(offreService.getAllOffresByUserId(userId));
     }
 
     // Endpoint pour récupérer les offres avec attributions et infos candidats pour un utilisateur donné
-    @GetMapping("/user/{idUser}")
-    public ResponseEntity<List<Offre>> getOffresWithAttributionsAndCandidatInfo(@PathVariable Long idUser) {
-        List<Offre> offres = offreService.getOffresWithAttributionsAndCandidatInfo(idUser);
+    @GetMapping("/user")
+    public ResponseEntity<List<Offre>> getOffresWithAttributionsAndCandidatInfo(@RequestHeader("AuthUserId") Long userId) {
+        List<Offre> offres = offreService.getOffresWithAttributionsAndCandidatInfo(userId);
         if (offres.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(offres);
     }
 
-    @GetMapping("/user/{userId}/{offreId}/matched-candidats")
+    @GetMapping("matched-candidats/{offreId}")
     public ResponseEntity<?> getMatchedCandidatsForUserOffre(
-            @PathVariable Long userId,
+            @RequestHeader("AuthUserId") Long userId,
             @PathVariable Long offreId) {
 
         // Vérifie si l'utilisateur possède l'offre
@@ -74,6 +75,11 @@ return ResponseEntity.ok(offreService.getAllOffresByUserId(userId));
             System.out.println("offrePostDTO.getIdUser()" + offrePostDTO.getIdUser());
             offrePostDTO.setIdUser(userId);
             System.out.println("offrePostDTO.getIdUser()" + offrePostDTO.getIdUser());
+        }
+
+        // check that dateDebut of offre is before dateFin of offre
+        if (offrePostDTO.getDateDebut().after(offrePostDTO.getDateFin())) {
+            throw new DateDebutAfterDateFinException(offrePostDTO.getDateDebut(), offrePostDTO.getDateFin());
         }
         Offre offre = offreService.mapDtoToEntity(offrePostDTO);
         System.out.println("offre in controller : " + offre);
