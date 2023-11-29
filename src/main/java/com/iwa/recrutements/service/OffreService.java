@@ -1,6 +1,7 @@
 package com.iwa.recrutements.service;
 
 import com.iwa.recrutements.dto.OffrePostDTO;
+import com.iwa.recrutements.dto.OffrePutDTO;
 import com.iwa.recrutements.exception.MatchingServiceException;
 import com.iwa.recrutements.exception.ResourceNotFoundException;
 import com.iwa.recrutements.exception.TypeEmploiNotFoundException;
@@ -77,13 +78,14 @@ public class OffreService {
             attributions.forEach(attribution -> {
                 Candidat candidat = candidatCache.computeIfAbsent(attribution.getEmailCandidat(), email -> {
                     try {
-                        return restTemplate.getForObject(candidatsServiceUrl + '/' + email, Candidat.class);
+                        return restTemplate.getForObject(candidatsServiceUrl + "/api/candidats/" + email, Candidat.class);
                     } catch (RestClientException e) {
                         // Log l'erreur ou renvoie une réponse par défaut
                         System.out.println("Error retrieving candidat: " + e.getMessage());
                         return null; // Ou utiliser un objet Candidat par défaut/placeholder
                     }
                 });
+                System.out.println("Candidat: " + candidat);
                 attribution.setCandidat(candidat);
             });
             offre.setAttributions(new HashSet<>(attributions));
@@ -93,8 +95,17 @@ public class OffreService {
     }
 
     // Create or Update offre
-    public Offre saveOrUpdateOffre(Offre offre) {
+    public Offre saveOffre(Offre offre) {
         Offre savedOffre = offreRepository.save(offre);
+        System.out.println("Saved offre: " + savedOffre);
+        // After saving, trigger the matching process
+        matchingUtilityService.triggerMatchingProcess();
+        return savedOffre;
+    }
+
+    public Offre updateOffre(Offre offre) {
+        Offre savedOffre = offreRepository.save(offre);
+        System.out.println("updated offre: " + savedOffre);
         // After saving, trigger the matching process
         matchingUtilityService.triggerMatchingProcess();
         return savedOffre;
@@ -128,7 +139,7 @@ public class OffreService {
         offreRepository.deleteById(id);
     }
 
-    public Offre mapDtoToEntity(OffrePostDTO offrePostDTO) {
+    public Offre mapPostDtoToEntity(OffrePostDTO offrePostDTO) {
         TypeEmploi typeEmploi = typeEmploiService.getTypeEmploiById(offrePostDTO.getIdTypeEmploi())
                 .orElseThrow(() -> new TypeEmploiNotFoundException("Type emploi not found"));
 
@@ -146,6 +157,30 @@ public class OffreService {
                 .typeEmploi(typeEmploi)
                 .ville(offrePostDTO.getVille())
                 .build();
+    }
+
+    public Offre mapUpdateDtoToEntity(OffrePutDTO offrePutDTO) {
+        TypeEmploi typeEmploi = typeEmploiService.getTypeEmploiById(offrePutDTO.getIdTypeEmploi())
+                .orElseThrow(() -> new TypeEmploiNotFoundException("Type emploi not found"));
+
+        Offre offre = offreRepository.findById(offrePutDTO.getIdOffre()).orElseThrow(() ->
+                new ResourceNotFoundException("Offre with id " + offrePutDTO.getIdOffre() + " not found"));
+
+        offre.setEmploi(offrePutDTO.getEmploi());
+        offre.setDescription(offrePutDTO.getDescription());
+        offre.setDateDebut(offrePutDTO.getDateDebut());
+        offre.setDateFin(offrePutDTO.getDateFin());
+        offre.setSalaire(offrePutDTO.getSalaire());
+        offre.setAvantages(offrePutDTO.getAvantages());
+        offre.setEtat(offrePutDTO.getEtat());
+        offre.setNombreCandidats(offrePutDTO.getNombreCandidats());
+        offre.setIdUser(offrePutDTO.getIdUser());
+        offre.setIdEtablissement(offrePutDTO.getIdEtablissement());
+        offre.setTypeEmploi(typeEmploi);
+        offre.setVille(offrePutDTO.getVille());
+
+        return offre;
+
     }
 
 }

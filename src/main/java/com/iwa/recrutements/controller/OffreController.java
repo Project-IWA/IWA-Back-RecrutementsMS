@@ -1,6 +1,7 @@
 package com.iwa.recrutements.controller;
 
 import com.iwa.recrutements.dto.OffrePostDTO;
+import com.iwa.recrutements.dto.OffrePutDTO;
 import com.iwa.recrutements.exception.DateDebutAfterDateFinException;
 import com.iwa.recrutements.model.Candidat;
 import com.iwa.recrutements.model.Offre;
@@ -35,9 +36,7 @@ public class OffreController {
     @GetMapping("/user")
     public ResponseEntity<List<Offre>> getOffresWithAttributionsAndCandidatInfo(@RequestHeader("AuthUserId") Long userId) {
         List<Offre> offres = offreService.getOffresWithAttributionsAndCandidatInfo(userId);
-        if (offres.isEmpty()) {
-            return ResponseEntity.notFound().build();
-        }
+        System.out.println("offres : " + offres);
         return ResponseEntity.ok(offres);
     }
 
@@ -81,10 +80,10 @@ public class OffreController {
         if (offrePostDTO.getDateDebut().after(offrePostDTO.getDateFin())) {
             throw new DateDebutAfterDateFinException(offrePostDTO.getDateDebut(), offrePostDTO.getDateFin());
         }
-        Offre offre = offreService.mapDtoToEntity(offrePostDTO);
+        Offre offre = offreService.mapPostDtoToEntity(offrePostDTO);
         System.out.println("offre in controller : " + offre);
         // save and return 204 created
-        Offre offreCreated = offreService.saveOrUpdateOffre(offre);
+        Offre offreCreated = offreService.saveOffre(offre);
         return new ResponseEntity<>(offreCreated, HttpStatus.CREATED);
     }
 
@@ -92,20 +91,23 @@ public class OffreController {
     // Only the user that sent the request can update his offre
     @PutMapping("/{idOffre}")
     public ResponseEntity<Offre> updateOffre(@PathVariable Long idOffre,
-                                             @RequestBody OffrePostDTO offrePostDTO,
+                                             @RequestBody OffrePutDTO offrePutDTO,
                                              @RequestHeader("AuthUserId") Long userId) {
         // check if the user id in the header is the same as the user id in the body
         // If not, bad request
-        if (userId != offrePostDTO.getIdUser()) {
+        if (userId != offrePutDTO.getIdUser()) {
             return ResponseEntity.badRequest().build();
         }
 
         // Map the dto to offre model
-        Offre offre = offreService.mapDtoToEntity(offrePostDTO);
+        System.out.println("offrePostDTO : " + offrePutDTO);
+        Offre offre = offreService.mapUpdateDtoToEntity(offrePutDTO);
+        System.out.println("offre : " + offre);
 
         // Ensure the ID is set to the path variable
         offre.setIdOffre(idOffre);
-        return ResponseEntity.ok(offreService.saveOrUpdateOffre(offre));
+        System.out.println("offre after id : " + offre);
+        return ResponseEntity.ok(offreService.updateOffre(offre));
     }
 
     // delete offre

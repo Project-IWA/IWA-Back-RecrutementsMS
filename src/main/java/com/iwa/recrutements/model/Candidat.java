@@ -21,6 +21,7 @@ public class Candidat {
     private String photo; // URL de la photo
     private String cv; // URL du CV
     private String shortBio;
+    private String experience; // l'experiance du candidat
     private EtatCandidat etat = EtatCandidat.DISPONIBLE; // L'état par défaut est "Disponible"
 
     // Enum pour définir les états possibles d'un candidat
@@ -42,6 +43,8 @@ public class Candidat {
         this.photo = details.getPhoto();
         this.cv = details.getCv();
         this.shortBio = details.getShortBio();
+        // récupérer le job de expérience et le stocker dans la variable de classe experience
+        this.experience = details.getExperience();
         this.etat = details.getEtat(); // Assurez-vous que l'objet 'details' a un champ 'etat' valide
     }
 
