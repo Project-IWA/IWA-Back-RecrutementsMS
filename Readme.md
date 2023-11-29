@@ -29,10 +29,10 @@ Le microservice de gestion des recruteurs du backend du projet IWA.
 4. **Configuration des Bases de Données**:
     - 🗄 Assurez-vous que Docker Compose est configuré pour démarrer les instances de bases de données nécessaires.
 
-## **🚀 Lancement des Microservices**
+## **🚀 Lancement du Microservice**
 
-1. **Préparation des Microservices**:
-    - 🛠 Dans le répertoire de chaque microservice, exécutez les commandes suivantes pour construire l'application :
+1. **Préparation du Microservice**:
+    - 🛠 Dans le répertoire du microservice, exécutez les commandes suivantes pour construire l'application :
 
         ```bash
           mvn clean package -DskipTests
@@ -42,18 +42,18 @@ Le microservice de gestion des recruteurs du backend du projet IWA.
         mvn install package -DskipTests
         ```
 
-    - 📦 Ces commandes génèrent le fichier JAR nécessaire pour chaque microservice tout en évitant les tests unitaires.
+    - 📦 Ces commandes génèrent le fichier JAR nécessaire pour le microservice tout en évitant les tests unitaires.
 2. **Construction et Lancement avec Docker Compose**:
-    - 🏗 Exécutez **`docker-compose build`** pour construire les images Docker de vos microservices.
+    - 🏗 Exécutez **`docker-compose build`** pour construire les images Docker du microservice.
     - 🌐 Lancez les services avec **`docker-compose up`**.
 
 ## **🔍 Vérification**
 
-- 🌐 Après le démarrage des services, vérifiez leur fonctionnement en accédant aux endpoints via un navigateur ou Postman.
+- 🌐 Après le démarrage du service, vérifiez leur fonctionnement en accédant aux endpoints via un navigateur ou Postman.
 
 ## **⚠️ Notes Importantes**
 
-- 🚀 Assurez-vous de démarrer Docker Compose avant de lancer les microservices.
+- 🚀 Assurez-vous de démarrer Docker Compose avant de lancer le microservice.
 - 🛑 L'utilisation de **`DskipTests`** dans les commandes Maven est essentielle pour éviter des tests de connexion prématurés à la base de données.
 
 ---
