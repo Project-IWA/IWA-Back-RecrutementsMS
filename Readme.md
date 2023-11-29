@@ -35,10 +35,11 @@ Le microservice de gestion des recruteurs du backend du projet IWA.
     - 🛠 Dans le répertoire de chaque microservice, exécutez les commandes suivantes pour construire l'application :
 
         ```bash
-        bashCopy code
-        mvn clean package -DskipTests
+          mvn clean package -DskipTests
+        ```
+      --
+      ```bash
         mvn install package -DskipTests
-        
         ```
 
     - 📦 Ces commandes génèrent le fichier JAR nécessaire pour chaque microservice tout en évitant les tests unitaires.
