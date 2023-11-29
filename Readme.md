@@ -5,7 +5,9 @@ Le microservice de gestion des recruteurs du backend du projet IWA.
 
 ## **🌟 Fonctionnalités Principales**
 
-- (Insérez ici les fonctionnalités clés du microservice)
+- Publication et gestion des offres d'emploi (CRUD).
+- Gestion du processus d’attribution des candidats à des offres (CRUD).
+- Communication avec le micro service Matching via des appels HTTP pour identifier les candidats appropriés.
 
 ## **🔧 Prérequis**
 
